@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+          ASD-170
+          Final Project
+          
+          
+          Airsoft Home Page
+          Author: Charles Jones	
+          Date: 21 Oct 2020 
+      
+          Filename: aa_register.html
+         -->
+   
+   <title>Archangel Airsoft</title>
+   <meta charset="utf-8" />
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="aa_reset.css" media="all">
+   <link rel="stylesheet" href="aa_print.css" media="print">
+   <link rel="stylesheet" href="aa_layout.css" media="screen">
+   <link rel="stylesheet" href="aa_forms.css" media="screen">
+   <script src="aa_script.js"></script>
+</head>
+
+<body>
+   <header>
+	<img src="as_logo.png" alt="Archangel Airsoft" />
+   </header>
+   <nav class="horizontal">
+      <ul>
+         <li><a href="aa_home.html">Home</a></li>
+         <li><a href="aa_indoor.html">Indoor Field</a></li>
+		 <li><a href="aa_outdoor.html">Outdoor Field</a></li>
+         <li><a href="aa_field_rules.html">Field Rules</a></li>
+         <li><a href="aa_store.html">Store</a></li>
+         <li><a href="airsoft_waiver.pdf">Liability Waiver</a></li>
+      </ul>
+   </nav>
+   <section>	  
+      <h1><b>ARCHANGEL AIRSOFT NEWSLETTER</b></h1>
+      <p>Required Item (*)</p>
+      <form action = "http://www.example.com/aa/register" method = "post">
+	  <lable for = "title">Title</lable>
+	  <input type = "text" name = "title" id = "titleBox" list = "titlelist" />
+	  <datalist id = "titlelist">
+	  <option value = "Mr.">
+	  <option value = "Mrs.">
+	  <option value = "Ms.">
+	  </datalist>
+	   <label for="firstname">First Name*</label>
+            <input type="text" name="firstName" id="fnBox" required />
+            <label for="lastname">Last Name*</label>
+            <input type="text" name="lastName" id="lnBox" required />
+            <label for="address">Address*</label>
+            <textarea type="text" name="address" id="addBox" required></textarea>
+            <label for="group">Team Name</label>
+            <input type="text" name="group" id="groupBox" />
+            <label for="email">Email*</label>
+            <input type="text" name="email" id="mailBox" required />
+            <label for="phoneNumber">Phone Number*</label>
+            <input type="text" name="phoneNumber" id="phoneBox" placeholder="(nnn)nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            <label for="Callsign">Callsign (if you have one)</label>
+            <input type="text" name="Callsign" id="idBox"  />
+            
+            <p>
+            <input type="submit" value="Continue">
+            </p>
+	  </form>
+   </section>
+  <footer>
+            <a href="aa_home.html"><img src="as_footer.png" alt="next" /></a>
+      </footer>
+   
+   <footer>
+      Archangel Airsoft, a one stope shop for fun and enterainment.
+   </footer>
+</body>
+</html>
